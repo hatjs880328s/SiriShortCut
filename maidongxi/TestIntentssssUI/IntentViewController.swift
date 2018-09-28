@@ -27,13 +27,13 @@ class IntentViewController: UIViewController, INUIHostedViewControlling {
     func configureView(for parameters: Set<INParameter>, of interaction: INInteraction, interactiveBehavior: INUIInteractiveBehavior, context: INUIHostedViewContext, completion: @escaping (Bool, Set<INParameter>, CGSize) -> Void) {
         if interaction.intentHandlingStatus == .success {
             let viewController = ConfirmViewController()
-            viewController.setIntent(color: UIColor.red)
+            viewController.setIntent(names: "发现你并不是骨骼惊奇之人。", numbers: "😒")
             attachChild(viewController)
             completion(true, parameters, desiredSize)
         }
         if interaction.intentHandlingStatus == .ready {
             let viewController = ConfirmViewController()
-            viewController.setIntent(color: UIColor.yellow,numbers: (interaction.intent as! TestIntent).number!)
+            viewController.setIntent(names: "骨骼惊奇之人必是练舞奇才！", numbers: "执行之后会有惊喜")
             attachChild(viewController)
             completion(true, parameters, desiredSize)
         }

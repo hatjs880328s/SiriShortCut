@@ -18,19 +18,20 @@ class ConfirmViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.red
+        self.view.backgroundColor = UIColor.white
     }
     
-    func setIntent(color: UIColor,numbers: NSNumber = 0) {
-//        if intent.st
-        self.view.backgroundColor = color
+    func setIntent(names:String,numbers: String) {
+        self.view.backgroundColor = UIColor.white
         let name = UILabel()
         let number = UILabel()
         
-        name.frame = CGRect(x: 10, y: 10, width: 120, height: 30)
-        number.frame = CGRect(x: 10, y: 50, width: 120, height: 30)
-        name.text = "siri宛如智障"
-        number.text = "买了\(numbers)跟黄瓜"
+        name.frame = CGRect(x: 10, y: 10, width: 250, height: 30)
+        name.font = UIFont.systemFont(ofSize: 12)
+        number.frame = CGRect(x: 10, y: 50, width: 250, height: 30)
+        number.font = UIFont.systemFont(ofSize: 12)
+        name.text = names
+        number.text = numbers
         self.view.addSubview(name)
         self.view.addSubview(number)
     }
