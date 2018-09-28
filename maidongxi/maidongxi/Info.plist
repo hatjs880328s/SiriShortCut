@@ -22,6 +22,7 @@
 	<true/>
 	<key>NSUserActivityTypes</key>
 	<array>
+		<string>TestIntent</string>
 		<string>com.inspur.openapp</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
