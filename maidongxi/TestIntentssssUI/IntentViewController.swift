@@ -27,7 +27,7 @@ class IntentViewController: UIViewController, INUIHostedViewControlling {
     func configureView(for parameters: Set<INParameter>, of interaction: INInteraction, interactiveBehavior: INUIInteractiveBehavior, context: INUIHostedViewContext, completion: @escaping (Bool, Set<INParameter>, CGSize) -> Void) {
         if interaction.intentHandlingStatus == .success {
             let viewController = ConfirmViewController()
-            viewController.setIntent(color: UIColor.purple)
+            viewController.setIntent(color: UIColor.red)
             attachChild(viewController)
             completion(true, parameters, desiredSize)
         }

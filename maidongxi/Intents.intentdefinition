@@ -80,6 +80,16 @@
 						<key>INIntentResponseCodeSuccess</key>
 						<true/>
 					</dict>
+					<dict>
+						<key>INIntentResponseCodeFormatString</key>
+						<string>登录失败捶死你！</string>
+						<key>INIntentResponseCodeFormatStringID</key>
+						<string>vS8ocD</string>
+						<key>INIntentResponseCodeName</key>
+						<string>loginFail</string>
+						<key>INIntentResponseCodeSuccess</key>
+						<true/>
+					</dict>
 				</array>
 				<key>INIntentResponseLastParameterTag</key>
 				<integer>0</integer>

@@ -17,6 +17,9 @@ class TestIntentHandle: NSObject,TestIntentHandling {
     
     
     func confirm(intent: TestIntent, completion: @escaping (TestIntentResponse) -> Void) {
+//        if 1 == 1 {
+//            completion(TestIntentResponse(code: TestIntentResponseCode.loginFail, userActivity: nil))
+//        }
         let response = TestIntentResponse(code: TestIntentResponseCode.ready, userActivity: nil)
         completion(response)
     }

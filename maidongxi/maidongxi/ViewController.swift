@@ -19,6 +19,11 @@ import CoreSpotlight
  注意：
  对于extention=module如果需要引入第三方oc库也需要创建一个bridge文件，并引入
  如果需要使用之前创建的swift文件，则需要在他的compile选项下面选择
+ 
+ Response 的 code 如果是系统自动创建的，会和 interaction.intentHandlingStatus 相互对应。
+ 但如果是自定义的状态，他们的 intentHandlingStatus 都对应着 INIntentHandlingStatusSuccess。
+ 
+ 
  */
 
 class ViewController: UIViewController,INUIAddVoiceShortcutViewControllerDelegate {
@@ -57,7 +62,7 @@ class ViewController: UIViewController,INUIAddVoiceShortcutViewControllerDelegat
         activity.isEligibleForSearch=true
         activity.isEligibleForPrediction = true
         let attribute = CSSearchableItemAttributeSet()
-        attribute.contentDescription = "想什么呢？"
+        attribute.contentDescription = "你可以说：买地瓜"
         activity.contentAttributeSet = attribute
         view.userActivity = activity
         activity.becomeCurrent()
