@@ -33,7 +33,7 @@ class IntentViewController: UIViewController, INUIHostedViewControlling {
         }
         if interaction.intentHandlingStatus == .ready {
             let viewController = ConfirmViewController()
-            viewController.setIntent(color: UIColor.yellow)
+            viewController.setIntent(color: UIColor.yellow,numbers: (interaction.intent as! TestIntent).number!)
             attachChild(viewController)
             completion(true, parameters, desiredSize)
         }

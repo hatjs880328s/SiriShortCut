@@ -21,7 +21,7 @@ class ConfirmViewController: UIViewController {
         self.view.backgroundColor = UIColor.red
     }
     
-    func setIntent(color: UIColor) {
+    func setIntent(color: UIColor,numbers: NSNumber = 0) {
 //        if intent.st
         self.view.backgroundColor = color
         let name = UILabel()
@@ -30,7 +30,7 @@ class ConfirmViewController: UIViewController {
         name.frame = CGRect(x: 10, y: 10, width: 120, height: 30)
         number.frame = CGRect(x: 10, y: 50, width: 120, height: 30)
         name.text = "siri宛如智障"
-        number.text = "是的"
+        number.text = "买了\(numbers)跟黄瓜"
         self.view.addSubview(name)
         self.view.addSubview(number)
     }

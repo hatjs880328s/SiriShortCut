@@ -10,6 +10,7 @@
 		56189EF8215DBC980058A37C /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56189EF7215DBC980058A37C /* ConfirmViewController.swift */; };
 		56189EF9215DBD500058A37C /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56189EF7215DBC980058A37C /* ConfirmViewController.swift */; };
 		56189EFC215DBDD00058A37C /* empty23.c in Sources */ = {isa = PBXBuildFile; fileRef = 56189EFB215DBDD00058A37C /* empty23.c */; };
+		56189EFD215DC1520058A37C /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 563FCC96215CFCE900EEA986 /* Intents.intentdefinition */; };
 		563FCC97215CFCE900EEA986 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 563FCC96215CFCE900EEA986 /* Intents.intentdefinition */; };
 		563FCCB1215CFD4A00EEA986 /* IntentProgressCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563FCCB0215CFD4A00EEA986 /* IntentProgressCenter.swift */; };
 		563FCCBA215CFDCF00EEA986 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563FCCB9215CFDCF00EEA986 /* IntentHandler.swift */; };
@@ -398,6 +399,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56189EFD215DC1520058A37C /* Intents.intentdefinition in Sources */,
 				56189EF9215DBD500058A37C /* ConfirmViewController.swift in Sources */,
 				563FCCC4215CFDCF00EEA986 /* IntentViewController.swift in Sources */,
 			);

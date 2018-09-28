@@ -20,29 +20,42 @@
 			<key>INIntentDescriptionID</key>
 			<string>xuhNMY</string>
 			<key>INIntentLastParameterTag</key>
-			<integer>0</integer>
+			<integer>2</integer>
 			<key>INIntentName</key>
 			<string>Test</string>
 			<key>INIntentParameterCombinations</key>
 			<dict>
-				<key></key>
+				<key>number</key>
 				<dict>
 					<key>INIntentParameterCombinationIsPrimary</key>
 					<true/>
 					<key>INIntentParameterCombinationSubtitle</key>
-					<string></string>
+					<string>买黄瓜根数</string>
 					<key>INIntentParameterCombinationSubtitleID</key>
-					<string>GFamnH</string>
+					<string>InB2AK</string>
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
 					<key>INIntentParameterCombinationTitle</key>
-					<string></string>
+					<string>黄瓜根数</string>
 					<key>INIntentParameterCombinationTitleID</key>
-					<string>6UvXaX</string>
+					<string>kNTcmB</string>
 				</dict>
 			</dict>
 			<key>INIntentParameters</key>
-			<array/>
+			<array>
+				<dict>
+					<key>INIntentParameterDisplayPriority</key>
+					<integer>1</integer>
+					<key>INIntentParameterName</key>
+					<string>number</string>
+					<key>INIntentParameterSupportsMultipleValues</key>
+					<false/>
+					<key>INIntentParameterTag</key>
+					<integer>2</integer>
+					<key>INIntentParameterType</key>
+					<string>Integer</string>
+				</dict>
+			</array>
 			<key>INIntentResponse</key>
 			<dict>
 				<key>INIntentResponseCodes</key>

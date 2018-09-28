@@ -71,6 +71,7 @@ class ViewController: UIViewController,INUIAddVoiceShortcutViewControllerDelegat
     
     @objc func addvoice() {
         let intent = TestIntent()
+        intent.number = 4
         let inaction = INInteraction(intent: intent, response: nil)
         inaction.donate { (error) in
             print(error)
