@@ -20,9 +20,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
-        let viewController = window?.rootViewController as! ViewController
         
-        viewController.sayHi()
+        guard userActivity.activityType == NSStringFromClass(TestIntent.self)  else {
+                //os_log("Can't continue unknown NSUserActivity type %@", userActivity.activityType)
+                return false
+        }
+        
+        guard let window = window,
+            let rootViewController = window.rootViewController as? UINavigationController else {
+                //os_log("Failed to access root view controller.")
+                return false
+        }
+        
+        restorationHandler(rootViewController.viewControllers)
         
         return true
     }

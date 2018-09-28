@@ -37,7 +37,7 @@ class ViewController: UIViewController,INUIAddVoiceShortcutViewControllerDelegat
         controller.dismiss(animated: true, completion: nil)
     }
     
-    let activity = NSUserActivity(activityType:"com.inspur.openapp")
+//    let activity = NSUserActivity(activityType:"com.inspur.openapp")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,15 +58,15 @@ class ViewController: UIViewController,INUIAddVoiceShortcutViewControllerDelegat
                 print("用户可以使用此应用程序的授权")
             }
         }
-        activity.title="购买东西"
-        activity.userInfo = ["speech":"买东西"]
-        activity.isEligibleForSearch=true
-        activity.isEligibleForPrediction = true
-        let attribute = CSSearchableItemAttributeSet()
-        attribute.contentDescription = "你可以说：买地瓜"
-        activity.contentAttributeSet = attribute
-        view.userActivity = activity
-        activity.becomeCurrent()
+//        activity.title="购买东西"
+//        activity.userInfo = ["speech":"买东西"]
+//        activity.isEligibleForSearch=true
+//        activity.isEligibleForPrediction = true
+//        let attribute = CSSearchableItemAttributeSet()
+//        attribute.contentDescription = "你可以说：买地瓜"
+//        activity.contentAttributeSet = attribute
+//        view.userActivity = activity
+//        activity.becomeCurrent()
         
         let btn = UIButton()
         btn.backgroundColor = UIColor.yellow
