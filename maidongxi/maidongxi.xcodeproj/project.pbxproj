@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56189EF8215DBC980058A37C /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56189EF7215DBC980058A37C /* ConfirmViewController.swift */; };
+		56189EF9215DBD500058A37C /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56189EF7215DBC980058A37C /* ConfirmViewController.swift */; };
+		56189EFC215DBDD00058A37C /* empty23.c in Sources */ = {isa = PBXBuildFile; fileRef = 56189EFB215DBDD00058A37C /* empty23.c */; };
 		563FCC97215CFCE900EEA986 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 563FCC96215CFCE900EEA986 /* Intents.intentdefinition */; };
 		563FCCB1215CFD4A00EEA986 /* IntentProgressCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563FCCB0215CFD4A00EEA986 /* IntentProgressCenter.swift */; };
 		563FCCBA215CFDCF00EEA986 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563FCCB9215CFDCF00EEA986 /* IntentHandler.swift */; };
@@ -68,6 +71,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		56189EF7215DBC980058A37C /* ConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
+		56189EFA215DBDCF0058A37C /* maidongxi-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "maidongxi-Bridging-Header.h"; sourceTree = "<group>"; };
+		56189EFB215DBDD00058A37C /* empty23.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = empty23.c; sourceTree = "<group>"; };
 		563FCC96215CFCE900EEA986 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
 		563FCCB0215CFD4A00EEA986 /* IntentProgressCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentProgressCenter.swift; sourceTree = "<group>"; };
 		563FCCB7215CFDCF00EEA986 /* TestIntentssss.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TestIntentssss.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -187,6 +193,9 @@
 				5654F388215CF11B002B2651 /* Assets.xcassets */,
 				5654F38A215CF11B002B2651 /* LaunchScreen.storyboard */,
 				5654F38D215CF11B002B2651 /* Info.plist */,
+				56189EF7215DBC980058A37C /* ConfirmViewController.swift */,
+				56189EFB215DBDD00058A37C /* empty23.c */,
+				56189EFA215DBDCF0058A37C /* maidongxi-Bridging-Header.h */,
 			);
 			path = maidongxi;
 			sourceTree = "<group>";
@@ -304,6 +313,7 @@
 					};
 					5654F37D215CF11A002B2651 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 						SystemCapabilities = {
 							com.apple.Siri = {
 								enabled = 1;
@@ -388,6 +398,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56189EF9215DBD500058A37C /* ConfirmViewController.swift in Sources */,
 				563FCCC4215CFDCF00EEA986 /* IntentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,7 +407,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56189EF8215DBC980058A37C /* ConfirmViewController.swift in Sources */,
 				563FCC97215CFCE900EEA986 /* Intents.intentdefinition in Sources */,
+				56189EFC215DBDD00058A37C /* empty23.c in Sources */,
 				563FCCB1215CFD4A00EEA986 /* IntentProgressCenter.swift in Sources */,
 				5654F384215CF11B002B2651 /* ViewController.swift in Sources */,
 				5654F382215CF11B002B2651 /* AppDelegate.swift in Sources */,
@@ -671,6 +684,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = maidongxi/maidongxi.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EJEV229UWS;
@@ -681,6 +695,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Inspur.ii.maidongxi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "maidongxi/maidongxi-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -692,6 +708,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = maidongxi/maidongxi.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EJEV229UWS;
@@ -702,6 +719,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Inspur.ii.maidongxi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "maidongxi/maidongxi-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
