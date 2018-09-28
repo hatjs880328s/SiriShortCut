@@ -11,6 +11,7 @@ import Foundation
 
 class TestIntentHandle: NSObject,TestIntentHandling {
     func handle(intent: TestIntent, completion: @escaping (TestIntentResponse) -> Void) {
+        //let response = TestIntentResponse
         let response = TestIntentResponse(code: TestIntentResponseCode.success, userActivity: nil)
         completion(response)
     }
